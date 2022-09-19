@@ -1,0 +1,95 @@
+server:
+  port: 8081  
+
+logging:
+  level:
+    org: 
+      springframework:
+        security: DEBUG
+
+spring:
+  config:
+    activate:
+      on-profile:
+      - dev
+    import:
+    - environment.yml
+  application:
+    name: credentials
+  datasource:
+    url: jdbc:mysql://${ddbb.host}:${ddbb.port}/${ddbb.database}
+    username: ${ddbb.user}
+    password: ${ddbb.pwd}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: ${jpa.implicit-strategy}
+        physical-strategy: ${jpa.physical-strategy}
+    generate-ddl: false
+    show-sql: false
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    properties:
+      hibernate:
+        "[default_schema]": ${ddbb.schema}
+        hbm2ddl:
+          auto: none
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: ${file.max-file-size}
+      file-size-threshold: ${file.file-size-threshold}
+      resolve-lazily: true
+      
+cors:
+  host: ${cor.host}
+  
+jwt:
+  expired: ${e-jwt.expired}
+  secret: ${e-jwt.secret}
+  roles: 
+    full: dev_admin,admin
+    onlyRead: grocer
+    onlyInsert: grocer
+    onlyUpdate: grocer
+    readInsert: secretary,grocer
+    readUpdate: grocer
+    insertUpdate: grocer
+  
+image:
+  format: .jpg
+  type: image/jpeg
+          
+sftp:
+  host: ${ftp.host}
+  port: ${ftp.port}
+  user: ${ftp.user}
+  password: ${ftp.password}
+  upload: ${ftp.upload}
+  dir_local: ${ftp.dir_local}
+  timeout:
+    session: ${ftp.timeout.session}
+    channel: ${ftp.timeout.channel}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

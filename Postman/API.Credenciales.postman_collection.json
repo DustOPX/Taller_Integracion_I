@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "a2320a9b-bd76-4a9e-9dcf-854fede448e5",
+		"name": "API.Credenciales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13881002"
+	},
+	"item": [
+		{
+			"name": "Identificacion",
+			"item": [
+				{
+					"name": "get identificaciones",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : \"0\" ,\n    \"quantityRecords\" : \"5\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-IDENTIFICACION}}/",
+							"host": [
+								"{{API-URL}}{{API-IDENTIFICACION}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single Identity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-URL}}{{API-IDENTIFICACION}}/identity?identityID=f95ad703-0ec5-49a1-8a9d-afb816e4856a",
+							"host": [
+								"{{API-URL}}{{API-IDENTIFICACION}}"
+							],
+							"path": [
+								"identity"
+							],
+							"query": [
+								{
+									"key": "identityID",
+									"value": "f95ad703-0ec5-49a1-8a9d-afb816e4856a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create identificacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"demo951236\",\n    \"keyword\": \"123456789\",\n    \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-IDENTIFICACION}}/?informationID=014e9eb7-f284-11ec-99d1-0242ac130002&listRoleID=1c4b3830-271f-45e3-ae46-a822eb9e0f3a,b5df743d-1098-433b-9023-b51cce23a3f2",
+							"host": [
+								"{{API-URL}}{{API-IDENTIFICACION}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "informationID",
+									"value": "014e9eb7-f284-11ec-99d1-0242ac130002"
+								},
+								{
+									"key": "listRoleID",
+									"value": "1c4b3830-271f-45e3-ae46-a822eb9e0f3a,b5df743d-1098-433b-9023-b51cce23a3f2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update identificacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"nombreUpdate\",\n    \"keyword\": \"123456789\",\n    \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-IDENTIFICACION}}/?identityID=0ee44d7b-33de-4917-8b5f-77c0028f5954&listRoleID=893806e0-f283-11ec-99d1-0242ac130002",
+							"host": [
+								"{{API-URL}}{{API-IDENTIFICACION}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "identityID",
+									"value": "0ee44d7b-33de-4917-8b5f-77c0028f5954"
+								},
+								{
+									"key": "listRoleID",
+									"value": "893806e0-f283-11ec-99d1-0242ac130002"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete identificacion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-IDENTIFICACION}}/?identityID=f95ad703-0ec5-49a1-8a9d-afb816e4856a",
+							"host": [
+								"{{API-URL}}{{API-IDENTIFICACION}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "identityID",
+									"value": "f95ad703-0ec5-49a1-8a9d-afb816e4856a"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Information",
+			"item": [
+				{
+					"name": "get Informaciones",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : \"0\" ,\n    \"quantityRecords\" : \"5\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-INFORMACION}}/",
+							"host": [
+								"{{API-URL}}{{API-INFORMACION}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single Informacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-URL}}{{API-INFORMACION}}/informacion?informacionID=014e9eb7-f284-11ec-99d1-0242ac130002",
+							"host": [
+								"{{API-URL}}{{API-INFORMACION}}"
+							],
+							"path": [
+								"informacion"
+							],
+							"query": [
+								{
+									"key": "informacionID",
+									"value": "014e9eb7-f284-11ec-99d1-0242ac130002"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create informacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nombres3\",\n    \"lastName\": \"apellidos\",\n    \"age\": 30,\n    \"cellPhonoNumber\": \"+56912345678\",\n    \"email\": \"correo@live.cl\",\n    \"dni\": \"12.345.678-7\",\n    \"country\": \"pais5\",\n    \"city\": \"ciudad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-INFORMACION}}/",
+							"host": [
+								"{{API-URL}}{{API-INFORMACION}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update informacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nombresUpdate\",\n    \"lastName\": \"apellidos\",\n    \"age\": 30,\n    \"cellPhonoNumber\": \"+56912345678\",\n    \"email\": \"correo@live.cl\",\n    \"dni\": \"12.345.678-8\",\n    \"country\": \"pais5\",\n    \"city\": \"ciudad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-INFORMACION}}/?informacionID=f77ab5f4-3049-429d-ad39-ffa60274c83e",
+							"host": [
+								"{{API-URL}}{{API-INFORMACION}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "informacionID",
+									"value": "f77ab5f4-3049-429d-ad39-ffa60274c83e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete informacion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-INFORMACION}}/?informacionID=3c06a39f-79d9-438a-9675-421d61f9da94",
+							"host": [
+								"{{API-URL}}{{API-INFORMACION}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "informacionID",
+									"value": "3c06a39f-79d9-438a-9675-421d61f9da94"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "get roles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : \"0\" ,\n    \"quantityRecords\" : \"5\" \n}"
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-ROLE}}/",
+							"host": [
+								"{{API-URL}}{{API-ROLE}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single role",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-ROLE}}/role?roleID=1c4b3830-271f-45e3-ae46-a822eb9e0f3a",
+							"host": [
+								"{{API-URL}}{{API-ROLE}}"
+							],
+							"path": [
+								"role"
+							],
+							"query": [
+								{
+									"key": "roleID",
+									"value": "1c4b3830-271f-45e3-ae46-a822eb9e0f3a"
+								},
+								{
+									"key": "roleID",
+									"value": "d42d3098-135d-11ed-894e-0242ac120003",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\"    : \"demo9\" ,\n    \"status\"  : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-ROLE}}/",
+							"host": [
+								"{{API-URL}}{{API-ROLE}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\"   : \"demoUpdate\" ,\n    \"status\" : \"false\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-ROLE}}/?roleID=02410722-08af-4dd9-a93b-453817de0260",
+							"host": [
+								"{{API-URL}}{{API-ROLE}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "roleID",
+									"value": "02410722-08af-4dd9-a93b-453817de0260"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete role",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-ROLE}}/?roleID=02410722-08af-4dd9-a93b-453817de0260",
+							"host": [
+								"{{API-URL}}{{API-ROLE}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "roleID",
+									"value": "02410722-08af-4dd9-a93b-453817de0260"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const json = JSON.parse( responseBody ) ;",
+									"pm.environment.set( \"TOKEN\" , `Bearer ${json.token}` ) ;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"correo@live.cl\" ,\n    \"password\" : \"dev\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-AUTH}}/login",
+							"host": [
+								"{{API-URL}}{{API-AUTH}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "get single image",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API-URL}}{{API-IMAGE}}/image?imageName=emai",
+							"host": [
+								"{{API-URL}}{{API-IMAGE}}"
+							],
+							"path": [
+								"image"
+							],
+							"query": [
+								{
+									"key": "imageName",
+									"value": "emai"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/dev/Imágenes/761.jpg"
+								},
+								{
+									"key": "name",
+									"value": "email",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API-URL}}{{API-IMAGE}}/",
+							"host": [
+								"{{API-URL}}{{API-IMAGE}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete image",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API-URL}}{{API-IMAGE}}/?imageName=email",
+							"host": [
+								"{{API-URL}}{{API-IMAGE}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "imageName",
+									"value": "email"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
