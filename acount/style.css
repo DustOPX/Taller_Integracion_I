@@ -1,14 +1,22 @@
+body{
+  background-color: black;
+}
+
 h1{
-    text-align: center;
+  text-align: center;;
+  color:#E7E7E7;
 }
 
 form{
     padding: 60px;
     max-width: 400px;
-    background-color: #E7E7E7;
     margin: 0 auto;
   }
   
+form .log{
+  background-color: #954D4D;
+}
+
   form input{
     margin-bottom: 15px;
     font-family: "Roboto", sans-serif;
@@ -19,12 +27,14 @@ form{
     color: #525c66; 
     font-size: 1em;
     resize: none; 
+    border-radius: 10px;
   }
-  form button{
+  form button{      
       display: block;
-      background-color: #0095eb;
+      background-color: #8F2626;
       padding: 10px 45px 10px 45px;
       border: 0;
+      border-radius: 10px;
       font-size: 1em; 
       color: 	white;
     font-family: "Roboto", sans-serif;
