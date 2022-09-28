@@ -4,8 +4,6 @@ $name = $_POST['name'];
 $last_name = $_POST['last_name'];
 $rut = $_POST['rut'];
 $correo = $_POST["correo"];
-$cell_phone = $_POST["cell_phone"];
-$date = $_POST["date"];
 $keyword = $_POST["keyword"];
 $keyword_confirmar = $_POST["keyword_confirmar"];
 
@@ -27,7 +25,7 @@ if ($existe) {
 
 # Si no existe, se ejecuta esta parte
 # Ahora intentamos registrarlo
-$Registrar = registrarUsuario($name, $last_name, $rut, $date, $cell_phone, $correo, $keyword);
+$Registrar = registrarUsuario($name, $last_name, $rut, $correo, $keyword);
 if ($Registrar) {
     echo "Registrado correctamente. Ahora puedes iniciar sesión";
 
