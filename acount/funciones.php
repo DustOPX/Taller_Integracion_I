@@ -44,7 +44,7 @@ function registrarUsuario($name, $last_name, $rut, $correo, $keyword)
 {
     $keyword = hashearkeyword($keyword); # algoritmo de contraseña
     $BD = obtenerBD();
-    $sentencia = $BD->prepare("INSERT INTO usuarios(`name`, `last_name`, `rut`, `correo`, `keyword`) values(?, ?, ?, ?, ?,)");
+    $sentencia = $BD->prepare("INSERT INTO usuarios(`name`, `last_name`, `rut`, `correo`, `keyword`) values(?, ?, ?, ?, ?)");
     return $sentencia->execute([$name, $last_name, $rut, $correo, $keyword]);
 }
 
