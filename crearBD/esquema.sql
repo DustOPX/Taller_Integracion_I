@@ -6,8 +6,6 @@ CREATE TABLE IF NOT EXISTS usuarios(
     `name` varchar(255) NOT NULL,
     `last_name` varchar(255) NOT NULL,
     `rut` varchar(255) DEFAULT NULL,
-    `date` date(4) NOT NULL,
-    `cell_phone` varchar(12) NOT NULL,
     `correo` varchar(255) NOT NULL unique, /*UNIQUE para evitar la duplicidad de usuarios*/
     `keyword` varchar(255) NOT NULL,
     `create_at` timestamp NOT NULL DEFAULT current_timestamp(),
