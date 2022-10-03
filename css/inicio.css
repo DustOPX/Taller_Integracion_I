@@ -1,0 +1,44 @@
+.snacks{
+    background-image: url("../IMG/Snacks.jpg");
+    background-size:contain;
+    background-repeat:no-repeat ;
+}
+.completos{
+    background-image: url("../IMG/Completo.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+.bebidas{
+    background-image: url("../IMG/Bebidas.jpg");
+    background-size: contain;
+    background-repeat:no-repeat ;
+}
+.cafe{
+    background-image: url("../IMG/Cafe.jpg");
+    background-size: contain;
+    background-repeat:no-repeat ;
+}
+.sandwiches{
+    background-image: url("../IMG/Sandwiches.jpg");
+    background-size: contain;
+    background-repeat:no-repeat ;
+}
+.wraps{
+    background-image: url("../IMG/Wrap.jpg");
+    background-size: contain;
+    background-repeat:no-repeat ;
+}
+div.inicio{                            
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: var(--color-auto); */
+    margin: 70px 10px 10px 10px;
+    width: 60%;
+    height:200%;
+    border-radius: 20px;
+}/*----------------------------------------------*/
+form div.inicio input{                    /*login*/
+    width: 70%;
+    margin: 20px 15%;
+    border-radius: 37px;
+}/*----------------------------------------------*/
