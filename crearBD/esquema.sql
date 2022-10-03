@@ -3,8 +3,7 @@ USE usuarios_login;
 /* Luego crea la tabla de los usuarios */
 CREATE TABLE IF NOT EXISTS usuarios(
     `id` bigint unsigned NOT NULL auto_increment,
-    `name` varchar(255) NOT NULL,
-    `last_name` varchar(255) NOT NULL,
+    `names` varchar(255) NOT NULL,
     `rut` varchar(255) DEFAULT NULL,
     `correo` varchar(255) NOT NULL unique, /*UNIQUE para evitar la duplicidad de usuarios*/
     `keyword` varchar(255) NOT NULL,
