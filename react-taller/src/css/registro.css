@@ -1,0 +1,81 @@
+div.datos{                             /*registro*/
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+}/*----------------------------------------------*/
+div input.item1{                       /*general*/
+    background-color:var(--color-auto);
+    margin: 10px;
+    font-family: "Roboto", sans-serif;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none; 
+    color: var(--letras); 
+    font-size: 1em;
+    resize: none; 
+    border-radius: 10px;
+  }
+
+  form  input{                           /*general*/
+    width: 90%;
+    margin: 10px;
+    padding: 15px 2%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box; 
+    border: none;  
+    font-size: 1em;
+    resize: none; 
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    background-color: #B4B4B4;
+  }/*----------------------------------------------*/
+  form button{                           /*general*/
+    background-color: var(--general-color);
+    padding: 10px 3%;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1em; 
+    color: var(--letras);
+    font-family: "Roboto", sans-serif;
+    margin: 10px 15%;
+    text-align: center;
+  }/*----------------------------------------------*/
+  form button:hover{                      /*general*/
+    background-color: var(--color-auto);
+  }/*----------------------------------------------*/
+  a{                                      /*general*/
+    color:var(--letras);
+  }/*----------------------------------------------*/
+
+
+.itemC3{                               /*registro*/
+    grid-column: 1 / -1;
+    width: 95%;
+}/*----------------------------------------------*/
+.itemC4 , .itemC5{                     /*registro*/
+    grid-column: 1 / -1;
+    width: 45%;
+}/*----------------------------------------------*/
+
+@media screen and (width < 1200px) {   /*general*/
+    div.datos {      /*registro*/
+      width: 85%;
+    }
+    .itemC3{        /*registro*/
+      grid-column: 1 / -1;
+      width: 95%;
+    }
+}/*----------------------------------------------*/
+@media screen and (width < 600px) {    
+    div.datos {    /*registro*/
+      width: 85%;
+      grid-template-columns: auto; 
+    }  
+    .itemC1, .itemC2, .itemC3, .itemC4 , .itemC5{
+      grid-column: 1 / -1;
+      width: 95%;
+    }
+}/*----------------------------------------------*/

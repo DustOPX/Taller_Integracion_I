@@ -1,0 +1,55 @@
+div.login{                               
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--color-auto);
+    margin: 70px 10px 10px 10px;
+    padding: 50px 10px 10px 10px;
+    width: 35%;
+    border-radius: 20px;
+  }
+  img{                                
+    text-align: center;
+    width: 30%;
+    margin: 0px 35%;
+  }
+  form div.login input{                  
+    width: 60%;
+    margin: 20px 20%;
+    padding: 15px 2%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box; 
+    border: none;  
+    font-size: 1em;
+    resize: none; 
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;;
+    background-color: #B4B4B4;
+  }
+  form div.login button{                
+    background-color:var(--general-color);
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 15px;
+    font-size: 1em; 
+    color:var(--letras);
+    font-family: "Roboto", sans-serif;
+    margin: 10px 35%;
+    text-align: center;  
+  }
+  form div.login button:hover{       
+    background-color:black;
+  }
+  a{                                
+    color:var(--letras);
+  }
+  @media screen and (width < 1200px) {   
+    div.login{     
+      width: 45%;
+    }
+  }
+  @media screen and (width < 600px) {   
+    div.login{      
+      width: 70%;
+    }
+  }

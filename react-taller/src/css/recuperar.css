@@ -1,0 +1,25 @@
+form div.recovery input{
+    width: 60%;
+    margin: 10px 20% 40px 20%;
+    padding: 15px 2%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box; 
+    border: none;  
+    font-size: 1em;
+    resize: none; 
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #B4B4B4;
+  }
+
+  form div.recovery button{                 
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1em; 
+    color:var(--letras);
+    font-family: "Roboto", sans-serif;
+    margin: 10px 35%;
+    text-align: center;  
+  }
