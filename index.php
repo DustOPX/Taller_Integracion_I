@@ -1,4 +1,4 @@
 <?php
 # Redireccionar al formulario.
-header("Location: ./HTML/login.html");
+header("Location: ./account/HTML/login.html");
 ?>
