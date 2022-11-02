@@ -1,0 +1,89 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+    <div id="buscador">
+        <input class="item1" name="buscar" type="text" placeholder="Buscar"> 
+        <div id="img">
+            <a title="usuario" href="home.html"><img src="../IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
+            <a title="caarrito" href="carrito.html"><img src="../IMG/carrito.png" alt="carrito" width="49" height="48" /></a>
+        </div>
+     </div>
+
+
+    <form class="datos">
+        <a href="../php/logout.php">Cerrar sesiÃ³n</a>
+         <div class="inicio">  
+            <div class="color" >
+                <h1>Productos</h1>
+                    <table class="tabla" id="lista-compra">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Sub Total</th>
+                                <th scope="col">Eliminar</th>
+                            </tr>
+        
+                        </thead>
+        
+                        <tr>
+                            <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                            <th scope="col">
+                                <p id="subtotal"></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="4" scope="col" class="text-right">IGV :</th>
+                            <th scope="col">
+                                <p id="igv"></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                            <th scope="col">
+                                <p id="total"></p>
+                            </th>
+                        </tr>
+        
+                    </table>
+                    <div class="">
+                        <button>
+                            <a href="./home.html">Seguir ordenando</a>
+                        </button>
+                    </div>
+                
+             </div>
+             <div class="color" >
+                <div>
+                    <div class="dropdown">
+                        <button class="dropbtn">LOCAL</button>
+                        <div class="dropdown-content">
+                          <a href="#">Edificio EB</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                        <h1>Hora</h1>
+                      </div>
+                </div>
+
+
+                <div class="">
+                    <button>
+                        <a href="./C_compra.html">Agendar hora</a>
+                    </button>
+                </div>
+            
+            </div>
+         
+    </form>
+    
+</body>
+</html>

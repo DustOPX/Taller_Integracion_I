@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src = "../javaScript/respuesta.js"></script> 
+</head>
+<body>
+    <div id="buscador">
+        <input class="item1" name="buscar" type="text" placeholder="Buscar"> 
+        <div id="img">
+            <a title="usuario" href="home.html"><img src="../IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
+            <a title="caarrito" href="carrito.html"><img src="../IMG/carrito.png" alt="carrito" width="49" height="48" /></a>
+        </div>
+     </div>
+    <form class="datos" action="../php/login.php" method="post">
+        <div class="login">
+            <div id="validar" ></div>
+            <img class="user" src="../IMG/Logo usuario.png" alt="logo usuario">
+            <input class="itemL" name="correo" type="email" placeholder="ingresar correo">
+            <input class="itemL" name="keyword" type="password" placeholder="Contraseña">
+            <a class="link" href="forgot.html">¿Olvidaste tu contraseña?</a>
+            <button type="submit">Ingresar</button>
+            <a class="link" href="./registro.html">Crear una cuenta</a>
+        </div>
+    </form>
+    <script src="../javaScript/variable.js"></script>
+</body>
+
+</html>

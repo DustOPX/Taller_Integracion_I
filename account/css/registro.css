@@ -1,0 +1,77 @@
+div.datos{                             
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+}/*----------------------------------------------*/
+form{                               
+  display: grid;
+  justify-items: center;
+  padding: 0px;
+  text-align: center;
+}
+form  input{                           
+  width: 90%;
+  margin: 10px;
+  padding: 15px 2%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; 
+  border: none;  
+  font-size: 1em;
+  resize: none; 
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  background-color: #B4B4B4;
+}/*----------------------------------------------*/
+form button{                          
+  background-color: var(--general-color);
+  padding: 10px 3%;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1em; 
+  color: var(--letras);
+  font-family: "Roboto", sans-serif;
+  margin: 10px 15%;
+  text-align: center;
+}
+form button:hover{                     
+  background-color: var(--color-auto);
+}/*----------------------------------------------*/
+.itemC3{                              
+    grid-column: 1 / -1;
+    width: 95%;
+}/*----------------------------------------------*/
+.itemC4 , .itemC5{                     
+    grid-column: 1 / -1;
+    width: 45%;
+}/*----------------------------------------------*/
+div #respuesta{  
+  color: var(--letras);                        
+  display: grid;
+  grid-template-columns: auto;
+  background-color: var(--color-auto);
+  margin: 5px;
+  padding: 5px;
+  width: 25%;
+  border-radius: 15px;
+}/*----------------------------------------------*/
+@media screen and (width < 1200px) {  
+    div.datos {      
+      width: 85%;
+    }
+    .itemC3{       
+      grid-column: 1 / -1;
+      width: 95%;
+    }
+}/*----------------------------------------------*/
+@media screen and (width < 600px) {    
+    div.datos {    
+      width: 85%;
+      grid-template-columns: auto; 
+    }  
+    .itemC1, .itemC2, .itemC3, .itemC4 , .itemC5{
+      grid-column: 1 / -1;
+      width: 95%;
+    }
+}/*----------------------------------------------*/

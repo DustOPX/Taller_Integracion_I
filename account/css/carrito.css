@@ -1,0 +1,100 @@
+div.color{
+    background-color: brown;
+    border-radius: 20px;
+
+}
+
+div.inicio{                            
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: var(red);
+    margin: 70px 10px 10px 10px;
+    width: 60%;
+    height:100%;
+    gap: 4rem;
+}/*----------------------------------------------*/
+
+.tabla{
+    background-color:var(--color-auto);
+    margin: 10px 0px 10px 15%;
+    font-family: "Roboto", sans-serif;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none; 
+    color: var(--letras); 
+    font-size: 1em;
+    resize: none; 
+    border-radius: 10px;
+}
+form{                               
+    display: grid;
+    justify-items: center;
+    padding: 0px;
+    text-align: center;
+  }
+
+form div.color{                    /*login*/
+    width: 100%;
+    margin: 20px 5%;
+
+}
+
+form button{                           /*general*/
+    background-color: var(--general-color);
+    padding: 10px 3%;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1em; 
+    color: var(--letras);
+    font-family: "Roboto", sans-serif;
+    margin: 10px 15%;
+    text-align: center;
+  }
+  form button:hover{                      /*general*/
+    background-color: var(--color-auto);
+  }/*----------------------------------------------*/
+
+
+
+
+
+
+.dropbtn {
+    background-color:red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <script src = "../javaScript/respuesta.js"></script> 
+</head>
+
+<body>
+    <div id="buscador">
+       <input class="item1" name="buscar" type="text" placeholder="Buscar">
+       <div id="img">
+        <a title="usuario" href="home.html"><img src="../IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
+        <a title="caarrito" href="carrito.html"><img src="../IMG/carrito.png" alt="carrito" width="49" height="48" /></a>
+    </div>
+    </div>
+    <h1>Crear cuenta</h1>
+    <form class="datos"  action="" method="post" id="formulario"> 
+        <div class="datos"> 
+            <input class="itemC1" required name="names" type="text" placeholder=" Nombre y apellido">
+            <input class="itemC2" required name="rut" type="number" placeholder=" Rut">
+            <input class="itemC3" required name="correo" type="email" placeholder="Correo electrónico">
+            <input class="itemC4" required name="keyword" type="password" placeholder="Contraseña">
+            <input class="itemC5" required name="keyword_confirmar" type="password" placeholder="Confirma contraseña">
+        </div>
+            <div class="mensaje">
+                <div id="respuesta" ></div>
+            </div>
+            <button class="registrar" type="submit" >crear cuenta</button>
+            <br>
+            <a class="link" href="./login.html">Ya tengo una cuenta</a>
+    </form>
+    <script src="../javaScript/variable.js"></script>
+    <style>
+        div #respuesta{  
+            color: white;                        
+            background-color: var(--color-auto);
+            margin: 5px;
+            padding: 5px;
+            width: 100%;
+            border-radius: 15px;
+            
+          }
+    </style>
+</body>
+</html>
