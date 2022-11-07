@@ -65,6 +65,7 @@ if(isset($_SESSION["cart"]) && !empty($_SESSION["cart"])):
 	
 	$found = false;
 	$total=0;
+	$total+=$valor;
 		foreach ($_SESSION["cart"] as $c) { if($c["product_id"]==$r->id){$total+=$valor; $found=true; break; }}
 		?>
 			<a href="./php/delfromcart.php?id=<?php echo $c["product_id"];?>" class="btn btn-danger">Eliminar</a>
