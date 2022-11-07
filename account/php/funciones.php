@@ -1,5 +1,5 @@
 <?php
-include_once "B_datos.php";
+include_once "conexion.php";
 
 function login($correo, $keyword){
     # Primero obtener usuario...
