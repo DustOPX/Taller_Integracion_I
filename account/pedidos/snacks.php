@@ -11,6 +11,7 @@ include "./php/conection.php";
 	<title>Snacks</title>
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/pedidos.css">
+	<link rel="icon" type="image/png" href="../IMG/logo mak.png" />
 </head>
 <body>
 

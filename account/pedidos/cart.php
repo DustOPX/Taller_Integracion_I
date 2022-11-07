@@ -11,6 +11,7 @@ include "./php/conection.php";
 	<title></title>
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/carrito.css">
+	<link rel="icon" type="image/png" href="../IMG/logo mak.png" />
 </head>
 <body>
 
