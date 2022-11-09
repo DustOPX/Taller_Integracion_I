@@ -56,9 +56,15 @@ function coincidencia($keyword, $keywordBD){
     return password_verify($keyword, $keywordBD);
 }
 
+
 function hashearkeyword($keyword){
-    return password_hash($keyword, PASSWORD_BCRYPT); # algoritmo para generar la contraseña 
+    return $keyword;  
 }
+
+# algoritmo para generar la contraseña
+// function hashearkeyword($keyword){
+//     return password_hash($keyword, PASSWORD_BCRYPT);  
+// }
 
 
 
