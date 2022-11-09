@@ -18,7 +18,8 @@ include "./php/conection.php";
 <div id="buscador">
         <input class="item1" name="buscar" type="text" placeholder="Buscar"> 
         <div id="img">
-			<a title="usuario" href="../HTML/home.html"><img src="../IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
+		<a title="home" href="../HTML/home.html"><img src="../IMG/home.png" alt="carrito" width="49" height="48" /></a>
+		<a title="usuario" href="#"><img src="../IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
             <a title="caarrito" href="./cart.php"><img src="../IMG/carrito.png" alt="carrito" width="49" height="48" /></a>
         </div>
      </div>
