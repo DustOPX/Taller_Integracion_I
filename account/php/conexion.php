@@ -1,7 +1,7 @@
 <?php
 function obtenerBD()
 {
-    $BD = "usuarios_login";
+    $BD = "mak";
     $usuario = "root";
     $contraseña = "";
     try {
