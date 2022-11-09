@@ -64,21 +64,20 @@ if(isset($_SESSION["cart"]) && !empty($_SESSION["cart"])):
 		<?php
 	
 	$found = false;
-	$total=0;
-	$total+=$valor;
-		foreach ($_SESSION["cart"] as $c) { if($c["product_id"]==$r->id){$total+=$valor; $found=true; break; }}
+
+		foreach ($_SESSION["cart"] as $c) { if($c["product_id"]==$r->id){$total; $found=true; break; }}
 		?>
 			<a href="./php/delfromcart.php?id=<?php echo $c["product_id"];?>" class="btn btn-danger">Eliminar</a>
 		</td>
 	</tr>
-	<?php endforeach; ?>
+	<?php endforeach; $cart = $_SESSION["cart"]; $total=count($cart);?>
 	</table>
 		
 <form class="form-horizontal" method="post" action="./php/process.php">
 	<div class="form-group">
 		<label for="obtener">valor a pagar</label>
 		<div class="obtener">
-		<td>$<?php echo number_format($total) ?></td>
+		<td><label id="spTotal">$<?php echo number_format($total) ?></label></td>
 		</div>
 
 		<label for="hora-cons" class="col-sm-2 control-label">hora retiro</label>
