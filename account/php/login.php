@@ -9,7 +9,7 @@ $keyword = $_POST["keyword"];
 $logueado = login($correo, $keyword);
 if ($logueado) {
     # Redirigir a la pagina de inicio
-     header("Location:../HTML/inicio.html");
+     header("Location:./inicio.php");
     // header("Location: inicio.php");  
     # Y salir
     exit;

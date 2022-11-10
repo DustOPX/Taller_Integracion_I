@@ -57,14 +57,14 @@ function coincidencia($keyword, $keywordBD){
 }
 
 
-function hashearkeyword($keyword){
-    return $keyword;  
-}
+// function hashearkeyword($keyword){
+//     return $keyword;  
+// }
 
 # algoritmo para generar la contraseña
-// function hashearkeyword($keyword){
-//     return password_hash($keyword, PASSWORD_BCRYPT);  
-// }
+function hashearkeyword($keyword){
+    return password_hash($keyword, PASSWORD_BCRYPT);  
+}
 
 
 

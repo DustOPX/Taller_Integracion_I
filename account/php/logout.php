@@ -7,3 +7,6 @@ session_destroy();
 
 # redireccionar al formulario de login
 header("Location: ../HTML/login.html");
+
+?>
+

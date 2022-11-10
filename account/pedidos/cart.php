@@ -8,7 +8,7 @@ include "./php/conection.php";
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Carrito</title>
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/carrito.css">
 	<link rel="icon" type="image/png" href="../IMG/logo mak.png" />
