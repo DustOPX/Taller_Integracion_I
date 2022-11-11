@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS usuarios_login;
-USE usuarios_login;
+CREATE DATABASE IF NOT EXISTS mak_sandwiche;
+USE mak_sandwiche;
 /* Luego crea la tabla de los usuarios */
 CREATE TABLE IF NOT EXISTS usuarios(
     `id` bigint unsigned NOT NULL auto_increment,

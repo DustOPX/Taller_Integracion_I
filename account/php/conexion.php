@@ -1,9 +1,9 @@
 <?php
 function obtenerBD()
 {
-    $BD = "mak";
+    $BD = "mak_sandwiche";
     $usuario = "root";
-    $contraseña = "";
+    $contraseña = "1234";
     try {
 
         $BD = new PDO('mysql:host=localhost;dbname=' . $BD, $usuario, $contraseña);
