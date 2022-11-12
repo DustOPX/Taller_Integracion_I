@@ -11,19 +11,7 @@
             <button class="registrar" type="submit" >crear cuenta</button>
             <br>
             <a class="link" href="index.php?vista=login">Ya tengo una cuenta</a>
-            <div class="notification is-danger is-light"></div>
-    </form>
-
-    <style>
-        div #respuesta{  
-            color: white;                        
-            background-color: var(--color-auto);
-            margin: 5px;
-            padding: 5px;
-            width: 100%;
-            border-radius: 15px;
             
-          }
-    </style>
+    </form>
 
 

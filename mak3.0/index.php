@@ -24,7 +24,6 @@
                 include "./vistas/".$_GET['vista'].".php";
 
                 include "./inc/script.php";
-                include "./vistas/registro.php";
             }else{
                 if($_GET['vista']=="login"){
                     include "./inc/navbar.php"; 
