@@ -1,5 +1,5 @@
 <?php
-$con  = new mysqli("localhost","root","1234","mak_sandwiche");
+$con  = new mysqli("localhost","mak3.0","mak3.0","mak_sandwiche");
 
 
 

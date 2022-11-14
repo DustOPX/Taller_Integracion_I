@@ -2,7 +2,7 @@
 	
 	# Conexion a la base de datos #
 	function conexion(){
-		$pdo = new PDO('mysql:host=localhost;dbname=mak_sandwiche', 'root', '1234');
+		$pdo = new PDO('mysql:host=localhost;dbname=mak_sandwiche', 'mak3.0', 'mak3.0');
 		return $pdo;
 	}
 
