@@ -25,15 +25,5 @@
                 </div >
             </div>
         </div>
-        
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a href="index.php?vista=logout" class="button is-link is-rounded">
-                        Salir
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </nav>
