@@ -80,3 +80,9 @@ form div.pedido input{
     }
 }
 
+.btn-primary{
+    background-image: url("../IMG/sad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

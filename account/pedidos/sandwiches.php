@@ -59,7 +59,7 @@ $products = $con->query("select * from productos where IDcategory = '5'");
 					<input type="number" name="q" value="1"  min="1" class="form-control" placeholder="Cantidad">
 					
 				</div>
-				<input type="submit" class="btn btn-primary" name="button5" value="Añadir"/>
+				<input type="submit" class="btn btn-primary" name="button5" value=""/>
 
 			</div>
 			</form>	
