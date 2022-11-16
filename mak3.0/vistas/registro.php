@@ -7,11 +7,14 @@
             <input class="itemC4" required name="usuario_clave_1" type="password" placeholder="Contraseña">
             <input class="itemC5" required name="usuario_clave_2" type="password" placeholder="Confirma contraseña">
         </div>
-
+        <div class="mensaje">
+                <div id="respuesta" ></div>
+            </div>
             <button class="registrar" type="submit" >crear cuenta</button>
             <br>
             <a class="link" href="index.php?vista=login">Ya tengo una cuenta</a>
             
     </form>
+    <script src="../js/variable.js"></script>
 
 

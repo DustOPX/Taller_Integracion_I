@@ -3,7 +3,7 @@
 <link rel="icon" type="image/png" href="../IMG/logo mak.png" />
 <title>Mak</title>
 <link rel="icon" type="image/png" href="./IMG/logo mak.png" />
-    <script src = "./js/respuesta.js"></script> 
+<script src = "./js/respuesta.js"></script> 
 <link rel="stylesheet" href="./css/general.css">
 <link rel="stylesheet" href="./css/C_nueva.css">
 <link rel="stylesheet" href="./css/C_compra.css">
