@@ -28,7 +28,7 @@ if(!empty($sessData['status']['msg'])){
 				$userData = $user->getRows($conditions);
 		?>
         <h2>Bienvenid@ <?php echo $userData['first_name']; ?>!</h2>
-        <a href="userAccount.php?logoutSubmit=1" class="logout">Cerrar Sesión</a>
+        <a href="userAccount.php?logoutSubmit=1" class="logout">iniciar sesion</a>
 		<div class="regisFrm">
 			<p><b>Nombre: </b><?php echo $userData['first_name'].' '.$userData['last_name']; ?></p>
             <p><b>Correo: </b><?php echo $userData['email']; ?></p>

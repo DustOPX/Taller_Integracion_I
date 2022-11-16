@@ -98,7 +98,7 @@ if(isset($_POST['signupSubmit'])){
 			$update = $user->update($data, $conditions);
 			
 			if($update){
-				$resetPassLink = 'http://localhost/olvidopass/resetPassword.php?fp_code='.$uniqidStr;
+				$resetPassLink = 'http://localhost/xampp/olvidopass/resetPassword.php?fp_code='.$uniqidStr;
 				
 				//get user details
 				$con['where'] = array('email'=>$_POST['email']);
@@ -111,10 +111,7 @@ if(isset($_POST['signupSubmit'])){
 				$mailContent = 'Estimad@ '.$userDetails['first_name'].', 
 				<br/><br/>Recientemente se envió una solicitud para restablecer una contraseña para su cuenta. Si esto fue un error, simplemente ignore este correo electrónico y no pasará nada.
 				<br/>Para restablecer su contraseña, visite el siguiente enlace: <a href="'.$resetPassLink.'">'.$resetPassLink.'</a>
-				<br/><br/>Saludos,
-                <br/>Para más desarrollos como este vísitame en mi sitio https://www.configuroweb.com, atentamente
-                <br/>Mauricio Sevilla
-                <br/>https://www.linkedin.com/in/mauricio-sevilla/';                ;
+				<br/><br/>Saludos,';                ;
                 
 				//set content-type header for sending HTML email
 				$headers = "MIME-Version: 1.0" . "\r\n";
