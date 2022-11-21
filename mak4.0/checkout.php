@@ -33,9 +33,9 @@ if(isset($_POST['order'])){
       $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
       $delete_cart->execute([$user_id]);
 
-      $message[] = 'order placed successfully!';
+      $message[] = 'Pedido realizado con éxito!';
    }else{
-      $message[] = 'your cart is empty';
+      $message[] = 'Su carrito está vacío';
    }
 
 }

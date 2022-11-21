@@ -67,6 +67,9 @@
 <style>
    div.message{
       color:white;
+      text-align: center;
+      font-size: x-large;
+   
    }
    div.profile{
       margin: 10px -15px 0px -15px;
