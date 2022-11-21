@@ -1,7 +1,22 @@
-section{                               
+section.orden{                               
+    background-color: #8F2626;
+    padding: 0px 10px;
+    border: 0;
+    border-radius: 20px;
+
+    color:var(--letras);
+    font-family: "Roboto", sans-serif;
+    margin: 150px 35%;
+
+}
+
+form{               
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 20px;
     display: grid;
-    justify-items: center;
-    padding: 0px;
-    text-align: center;
-    background-color: brown;
+    align-content: space-evenly;
+    grid-template-columns: auto ;
+    border-radius: 10px;
+
 }
