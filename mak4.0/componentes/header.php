@@ -23,7 +23,7 @@
 
       <div class="profile" id="img"><a title="usuario" href="#"><img src="./IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
          <?php          
-            $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+            $select_profile = $conn->prepare("SELECT * FROM `users` WHERE Rut = ?");
             $select_profile->execute([$user_id]);
             if($select_profile->rowCount() > 0){
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
