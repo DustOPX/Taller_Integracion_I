@@ -61,7 +61,7 @@ if(isset($_POST['order'])){
    
 <?php include 'componentes/header.php'; ?>
 
-<section class="checkout-orders">
+<section class="orden">
 
    <form action="" method="POST">
 

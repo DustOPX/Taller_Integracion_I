@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recuperar</title>
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/C_compra.css">
+    <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/C_compra.css">
     <link rel="icon" type="image/png" href="./IMG/logo mak.png" />
 </head>
 <body>

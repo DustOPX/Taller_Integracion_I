@@ -11,7 +11,7 @@ if(isset($_SESSION['user_id'])){
 };
 
 if(isset($_POST['submit'])){
-
+   $id = $_POST['id'];
    $name = $_POST['name'];
    $name = filter_var($name, FILTER_SANITIZE_STRING);
    $email = $_POST['email'];
@@ -31,8 +31,8 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $message[] = '¡Confirme que la contraseña no coincide!';
       }else{
-         $insert_user = $conn->prepare("INSERT INTO `users`(name, email, password) VALUES(?,?,?)");
-         $insert_user->execute([$name, $email, $cpass]);
+         $insert_user = $conn->prepare("INSERT INTO `users`(id,name, email, password) VALUES(?,?,?,?)");
+         $insert_user->execute([$id,$name, $email, $cpass]);
          $message[] = 'Registrado correctamente, inicie sesión ahora por favor!';
       }
    }
@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
       <h1>crear cuenta</h1>
 <div class="datos">
          <input class="itemC1" type="text" name="name" required placeholder="nombres" maxlength="20"  class="box">
-         <input class="itemC2" type="text" name="rut" required placeholder="rut" maxlength="20"  class="box">
+         <input class="itemC2" type="text" name="id" required placeholder="rut" maxlength="20"  class="box">
          <input class="itemC3" type="email" name="email" required placeholder="email" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
          <input class="itemC4" type="password" name="pass" required placeholder="contraseña" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
          <input class="itemC5" type="password" name="cpass" required placeholder="confirmar contraseña" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">

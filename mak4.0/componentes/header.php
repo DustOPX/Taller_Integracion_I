@@ -30,10 +30,7 @@
          ?>
          <p><?= $fetch_profile["email"]; ?></p>
 
-         <div class="flex-btn">
-            <a href="registrar.php" class="option-btn">registrarse</a>
-            <a href="login.php" class="option-btn">login</a>
-         </div>
+
          <a href="componentes/user_logout.php" class="delete-btn" onclick="return confirm('quiere cerrar su sesion?');">cerrar sesion</a> 
          <?php
             }else{
