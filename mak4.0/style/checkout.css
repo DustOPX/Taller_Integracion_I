@@ -1,22 +1,45 @@
 section.orden{                               
-    background-color: #8F2626;
-    padding: 0px 10px;
     border: 0;
     border-radius: 20px;
-
+    display: grid;
+    grid-template-columns: auto  auto;
     color:var(--letras);
     font-family: "Roboto", sans-serif;
-    margin: 150px 35%;
+    margin: 150px 10%;
 
 }
 
-form{               
-    width: 100%;
+form{   
+    background-color: #8F2626;            
+    width: 80%;
+    padding: 0px 10px;
     margin: 10px 0px;
     font-size: 20px;
     display: grid;
     align-content: space-evenly;
     grid-template-columns: auto ;
     border-radius: 10px;
+}
 
+div.pedido{
+    background-color: #8F2626;            
+    padding: 10px 10px;
+    height: 150px;
+    margin: 10px 0px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+}
+
+input{
+    margin: 10px 20%;
+    border-radius: 10px;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+div.total{
+    font-family: Arial Black;
 }
