@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
     <title>login</title>
     <link rel="stylesheet" href="./style/general.css">
     <link rel="stylesheet" href="./style/login.css">
-    <link rel="icon" type="image/png" href="./IMG/logo mak.png" />
+    <link rel="icon" type="image/png" href="./IMG/logo_mak.png" />
 </head>
 <body>
 <?php include 'componentes/header.php'; ?>
@@ -56,9 +56,9 @@ if(isset($_POST['submit'])){
 	
 				<input class="input itemL" type="password" name="pass"  required  placeholder="Contraseña">
 
-	
+            <a href="./forgot.php" >olvide mi contraseña</a>   
 				<input class="button" type="submit" value="enviar" name="submit">
-					<a href="./registrar.php" >registrar</a>
+				<a href="./registrar.php" >registrarse</a>
 
 			</div>
 		</form>

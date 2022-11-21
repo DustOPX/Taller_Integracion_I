@@ -75,6 +75,7 @@ a{                                      /*general*/
 .dropdown {
   position: relative;
   display: inline-block;
+  text-align:center;
 }
 
 .dropdown-content {

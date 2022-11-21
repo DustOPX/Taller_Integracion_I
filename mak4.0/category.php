@@ -33,9 +33,9 @@ include 'componentes/wishlist_cart.php';
    
 <?php include 'componentes/header.php'; ?>
 
-<section class="products">
+<section class="productos">
 
-   <h1 class="heading">producto</h1>
+   <h1 class="heading">Producto</h1>
 
    <div class="box-container">
 

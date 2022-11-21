@@ -82,10 +82,9 @@
    div.container{
       margin:0px 0px 0px  -80%;
       grid-template-columns: auto  auto auto;
-
-
-  display: grid;
+      display: grid;
    }
+
 </style>
 
 <!-- <div id="buscador">

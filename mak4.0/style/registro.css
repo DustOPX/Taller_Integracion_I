@@ -24,7 +24,7 @@ form  input{
   font-family: "Roboto", sans-serif;
   background-color: #B4B4B4;
 }/*----------------------------------------------*/
-form button{                          
+form input.btn{                          
   background-color: var(--general-color);
   padding: 10px 3%;
   border: 0;
@@ -32,11 +32,12 @@ form button{
   font-size: 1em; 
   color: var(--letras);
   font-family: "Roboto", sans-serif;
-  margin: 10px 15%;
+  margin: 15px 55%;
   text-align: center;
 }
-form button:hover{                     
+form input.btn:hover{                     
   background-color: var(--color-auto);
+  cursor: pointer;
 }/*----------------------------------------------*/
 .itemC3{                              
     grid-column: 1 / -1;
