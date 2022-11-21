@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
 
 	
 				<input class="button" type="submit" value="enviar" name="submit">
-					<a href="index.php?vista=registro" >registrar</a>
+					<a href="./registrar.php" >registrar</a>
 
 			</div>
 		</form>

@@ -26,14 +26,14 @@ if(isset($_POST['submit'])){
    $row = $select_user->fetch(PDO::FETCH_ASSOC);
 
    if($select_user->rowCount() > 0){
-      $message[] = 'email already exists!';
+      $message[] = '¡El correo ya existe!';
    }else{
       if($pass != $cpass){
-         $message[] = 'confirm password not matched!';
+         $message[] = '¡Confirme que la contraseña no coincide!';
       }else{
          $insert_user = $conn->prepare("INSERT INTO `users`(name, email, password) VALUES(?,?,?)");
          $insert_user->execute([$name, $email, $cpass]);
-         $message[] = 'registered successfully, login now please!';
+         $message[] = 'Registrado correctamente, inicie sesión ahora por favor!';
       }
    }
 
@@ -50,11 +50,11 @@ if(isset($_POST['submit'])){
    <title>register</title>
    
    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="./css/general.css">
-   <link rel="stylesheet" href="./css/registro.css">
+   <link rel="stylesheet" href="./style/general.css">
+   <link rel="stylesheet" href="./style/registro.css">
 
 </head>
 <body>
@@ -64,8 +64,8 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form  class="datos" action="" method="post">
+      <h1>crear cuenta</h1>
 <div class="datos">
-
          <input class="itemC1" type="text" name="name" required placeholder="nombres" maxlength="20"  class="box">
          <input class="itemC2" type="text" name="rut" required placeholder="rut" maxlength="20"  class="box">
          <input class="itemC3" type="email" name="email" required placeholder="email" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
@@ -73,8 +73,8 @@ if(isset($_POST['submit'])){
          <input class="itemC5" type="password" name="cpass" required placeholder="confirmar contraseña" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
          <input type="submit" value="crear cuenta" class="btn" name="submit">
 
-         <a href="login.php" class="option-btn">tengo una cuenta</a>
-</div>
+      </div>
+      <a href="login.php" class="option-btn">tengo una cuenta</a>
    </form>
 
 </section>
