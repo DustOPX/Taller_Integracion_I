@@ -89,18 +89,19 @@ if(isset($_POST['order'])){
       ?>
          <input type="hidden" name="total_products" value="<?= $total_products; ?>">
          <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-
+         <input type="time" name="time" value="12:00">
+         <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="realizar compra">
       </div>
 
 
 
    </form>
-
-   <div class="pedido">
+         <!-- cambiar  -->
+   <form class="pedido" action="" method="POST">
    <div class="total">PRECIO TOTAL : <span> $<?= $grand_total; ?>/-</span></div>
          <input type="time" name="time" value="12:00">
          <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="realizar compra">
-   </div>
+      </form>
 </section>
 
 

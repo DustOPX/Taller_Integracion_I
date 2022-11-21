@@ -21,7 +21,7 @@ form{
     border-radius: 10px;
 }
 
-div.pedido{
+form.pedido{
     background-color: #8F2626;            
     padding: 10px 10px;
     height: 150px;
