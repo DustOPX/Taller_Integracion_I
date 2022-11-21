@@ -1,0 +1,25 @@
+section{                               
+    background-color: #8F2626;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1em; 
+    color:var(--letras);
+    font-family: "Roboto", sans-serif;
+    margin: 10px 35%;
+    text-align: center; 
+}
+
+form{               
+    width: 90%;
+    height: 200px;
+    background-color:var(--color-auto);
+    margin: 10px 7%;
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    border-radius: 10px;
+    text-align: center;
+}
