@@ -1,6 +1,6 @@
 <?php
 
-include 'componentes/connect.php';
+include './componentes/connect.php';
 
 session_start();
 
@@ -10,7 +10,7 @@ if(isset($_SESSION['user_id'])){
    $user_id = '';
 };
 
-include 'componentes/wishlist_cart.php';
+include './componentes/wishlist_cart.php';
 
 ?>
 
@@ -21,7 +21,6 @@ include 'componentes/wishlist_cart.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>home</title>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
         <link rel="stylesheet" href="./style/general.css">
         <link rel="stylesheet" href="./style/home.css">
         <link rel="icon" type="image/png" href="./IMG/logo_mak.png" />

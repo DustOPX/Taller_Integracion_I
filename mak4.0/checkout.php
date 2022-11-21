@@ -35,7 +35,7 @@ if(isset($_POST['order'])){
 
       $message[] = 'Pedido realizado con éxito!';
    }else{
-      $message[] = 'Su carrito está vacío';
+      $message[] = 'tu carrito esta vacio';
    }
 
 }
