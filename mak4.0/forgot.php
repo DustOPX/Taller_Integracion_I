@@ -7,7 +7,9 @@ if(isset($_POST['submit'])){
 
    $email = $_POST['email'];
    $email = filter_var($email, FILTER_SANITIZE_STRING);
-
+   $select_user = $conn->prepare("SELECT * FROM `usuarios` WHERE email = ?");
+   $select_user->execute([$email]);
+   $row = $select_user->fetch(PDO::FETCH_ASSOC);
 }
 ?>
 
