@@ -5,12 +5,22 @@ include 'componentes/connect.php';
 
 if(isset($_POST['submit'])){
 
-   $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
-   $select_user = $conn->prepare("SELECT * FROM `usuarios` WHERE email = ?");
-   $select_user->execute([$email]);
-   $row = $select_user->fetch(PDO::FETCH_ASSOC);
-}
+    $email = $_POST['email'];
+    $email = filter_var($email, FILTER_SANITIZE_STRING);
+
+ 
+    $select_user = $conn->prepare("SELECT * FROM `usuarios` WHERE email = ? ");
+    $select_user->execute([$email]);
+    $row = $select_user->fetch(PDO::FETCH_ASSOC);
+ 
+    if($select_user->rowCount() > 0){
+       header('location:C_nueva.php');
+    }else{
+       $message[] = 'usuario no encontrado!';
+    }
+ }
+
+
 ?>
 
 
@@ -27,7 +37,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 
-
+<?php include 'componentes/header.php'; ?>
         <form class="datos" action="" method='post'>
             <div class="forgot">
                     <img class="sad" src="./IMG/sad.png" width="100px">
@@ -35,7 +45,7 @@ if(isset($_POST['submit'])){
                     <br>
                     <input class="item" type="text" name="email" placeholder="ingresar correo"/>
                     <br>
-                    <button type="submit" name="forgot_pass">Enviar</button>
+                    <input  type="submit" name="forgot_pass" value="enviar">
             </div>
         </form>
 </body>
