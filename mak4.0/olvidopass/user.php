@@ -3,9 +3,15 @@
 class User{
     private $dbHost     = "localhost";
     private $dbUsername = "root";
-    private $dbPassword = "";
+    private $dbPassword = "1234";
     private $dbName     = "logtest";
     private $userTbl    = "users";
+
+    // private $dbHost     = "db.inf.uct.cl";
+    // private $dbUsername = "apetey";
+    // private $dbPassword = "Petey2022*";
+    // private $dbName     = "apetey";
+    // private $userTbl    = "users";
     
     public function __construct(){
         if(!isset($this->db)){

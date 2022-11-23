@@ -1,6 +1,5 @@
 <?php
-
-include 'componentes/connect.php';
+include 'componentes/connect.php';  
 
 session_start();
 
@@ -43,7 +42,7 @@ if(isset($_POST['order'])){
 
       $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
       $delete_cart->execute([$user_id]);
-      header("Location: ./compraLista.php");
+      header("Location: ./QR/");
       $message[] = 'Pedido realizado con éxito!';
 
    }else{
