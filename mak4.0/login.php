@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
 	
 				<input class="input itemL" type="password" name="pass"  required  placeholder="Contraseña">
 
-            <a href="./forgot.php" >olvide mi contraseña</a>   
+            <a href="./olvidopass/" >olvide mi contraseña</a>   
 				<input class="button" type="submit" value="enviar" name="submit">
 				<a href="./registrar.php" >registrarse</a>
 
