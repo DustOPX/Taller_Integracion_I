@@ -19,9 +19,6 @@ form div.inicio input{
     border-radius: 37px;
 }/*----------------------------------------------*/
 
-img:hover {
-    filter: drop-shadow(5px 5px 5px white);
-  }
 
   @media screen and (width < 800px) {  
     div.inicio {      

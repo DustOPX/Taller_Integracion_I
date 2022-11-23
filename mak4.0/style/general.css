@@ -3,6 +3,8 @@
   --color-auto:#954D4D;
   --letras:#E7E7E7;
 }/*----------------------------------------------*/
+
+
 body{                               
   background-color:black ;
   background-repeat: no-repeat;
@@ -100,4 +102,11 @@ a{                                      /*general*/
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+img:hover {
+  filter: drop-shadow(5px 5px 5px white);
+}
+p{
+  color:aliceblue
 }

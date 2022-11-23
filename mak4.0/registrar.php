@@ -49,11 +49,7 @@ if(isset($_POST['submit'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>register</title>
-   
-   <!-- font awesome cdn link  -->
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
-
-   <!-- custom css file link  -->
+   <link rel="icon" type="image/png" href="./IMG/logo_mak.png" />
    <link rel="stylesheet" href="./style/general.css">
    <link rel="stylesheet" href="./style/registro.css">
 
@@ -68,7 +64,7 @@ if(isset($_POST['submit'])){
       <h1>crear cuenta</h1>
 <div class="datos">
          <input class="itemC1" type="text" name="name" required placeholder="nombres" maxlength="20"  class="box">
-         <input class="itemC2" type="text" name="id" required placeholder="id ej: 123456789" maxlength="20"  class="box">
+         <input class="itemC2" type="text" name="id" required placeholder="RUT ej: 123456789" maxlength="20"  class="box">
          <input class="itemC3" type="email" name="email" required placeholder="email" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
          <input class="itemC4" type="password" name="pass" required placeholder="contraseña" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
          <input class="itemC5" type="password" name="cpass" required placeholder="confirmar contraseña" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">

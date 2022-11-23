@@ -20,10 +20,10 @@ include './componentes/wishlist_cart.php';
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>home</title>
+        <title>MAK</title>
+        <link rel="icon" type="image/png" href="./IMG/logo_mak.png" />
         <link rel="stylesheet" href="./style/general.css">
         <link rel="stylesheet" href="./style/home.css">
-        <link rel="icon" type="image/png" href="./IMG/logo_mak.png" />
     </head>
     <body>
     <?php include 'componentes/header.php'; ?>

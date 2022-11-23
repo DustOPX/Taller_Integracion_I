@@ -1,45 +1,58 @@
-section.orden{                               
-    border: 0;
-    border-radius: 20px;
+h3{
+    font-size: 30px;
+    text-align: center;
+    color:aliceblue;
+    margin: 50px 0px -50px 0px;
+}
+div.display{
     display: grid;
     grid-template-columns: auto  auto;
     color:var(--letras);
     font-family: "Roboto", sans-serif;
-    margin: 150px 10%;
-
+    margin: 100px 10%; 
+     
 }
 
-form{   
-    background-color: #8F2626;            
-    width: 80%;
-    padding: 0px 10px;
-    margin: 10px 0px;
+div.producto{               
+    width: 90%;
+    background-color: #8F2626;
+    margin: 10px 7%;
     font-size: 20px;
     display: grid;
-    align-content: space-evenly;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     border-radius: 10px;
-}
 
-form.pedido{
-    background-color: #8F2626;            
-    padding: 10px 10px;
-    height: 150px;
-    margin: 10px 0px;
-    font-size: 20px;
-    border-radius: 10px;
+}
+div.orden{               
+    width: 90%;
+    height: 240px;
+    background-color: #8F2626;
+    margin: 10px 7%;
+    font-size: 30px;
     text-align: center;
     display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto;
+    border-radius: 10px;
+    text-align: center;
 }
-
 input{
     margin: 10px 20%;
     border-radius: 10px;
-}
-h3{
-    font-size: 30px;
-    text-align: center;
+    padding: 10px;
 }
 div.total{
     font-family: Arial Black;
 }
+
+p.empty{
+    text-align: center;
+    font-size: 30px;
+}
+input.btn{
+ background-color:#954D4D ;
+ font-size: 20px;
+}
+input.btn:hover{
+    background-color:rgb(235, 93, 93);
+   }

@@ -49,7 +49,9 @@
       </div> 
       </div>
       <a title="home" href="./home.php"><img src="./IMG/home.png" alt="home" width="49" height="48" /></a>
-         <a href="cart.php"><img src="./IMG/carrito.png" alt="carrito" width="49" height="48" /><i class="fas fa-shopping-cart"></i><span>(<?= $total_cart_counts; ?>)</span></a>     
+         <a href="cart.php">
+            <img src="./IMG/carrito.png" alt="carrito" width="49" height="48" /><span class="cantidad">(<?= $total_cart_counts; ?>)</span>
+         </a>     
  
       </div>
    </section>
@@ -84,16 +86,6 @@
       grid-template-columns: auto  auto auto;
       display: grid;
    }
-
 </style>
-
-<!-- <div id="buscador">
-            <input class="item1" name="buscar" type="text" placeholder="Buscar"> 
-            <div id="img">
-                <a title="home" href="./home.html"><img src="./IMG/home.png" alt="home" width="49" height="48" /></a>
-                <a title="usuario" href="#"><img src="./IMG/usuario.png" alt="carrito" width="49" height="48" /></a>
-                <a title="caarrito" href="./pedidos/cart.php"><img src="./IMG/carrito.png" alt="carrito" width="49" height="48" /></a>
-            </div>
-        </div> -->
 
 

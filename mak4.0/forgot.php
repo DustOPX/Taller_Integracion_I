@@ -7,7 +7,7 @@
     <title>forgot_pass</title>
     <link rel="stylesheet" href="./style/general.css">
     <link rel="stylesheet" href="./style/forgot.css">
-    <link rel="icon" type="image/png" href="./IMG/logo mak.png" />
+    <link rel="icon" type="image/png" href="./IMG/logo_mak.png" />
 </head>
 <body>
 
