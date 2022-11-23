@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
    $pass = sha1($_POST['pass']);
    $pass = filter_var($pass, FILTER_SANITIZE_STRING);
 
-   $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
+   $select_user = $conn->prepare("SELECT * FROM `usuarios` WHERE email = ? AND password = ?");
    $select_user->execute([$email, $pass]);
    $row = $select_user->fetch(PDO::FETCH_ASSOC);
 
@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
 	
 				<input class="input itemL" type="password" name="pass"  required  placeholder="Contraseña">
 
-            <a href="./olvidopass/" >olvide mi contraseña</a>   
+            <a href="./forgot.php" >olvide mi contraseña</a>   
 				<input class="button" type="submit" value="enviar" name="submit">
 				<a href="./registrar.php" >registrarse</a>
 

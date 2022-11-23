@@ -11,7 +11,7 @@ if(isset($_SESSION['user_id'])){
    header('location:login.php');
 };
          
-$perfil = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+$perfil = $conn->prepare("SELECT * FROM `usuarios` WHERE id = ?");
 $perfil->execute([$user_id]);
 if($perfil->rowCount() > 0){
 $buscar = $perfil->fetch(PDO::FETCH_ASSOC);

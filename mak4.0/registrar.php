@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
    $cpass = sha1($_POST['cpass']);
    $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
 
-   $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
+   $select_user = $conn->prepare("SELECT * FROM `usuarios` WHERE email = ?");
    $select_user->execute([$email]);
    $row = $select_user->fetch(PDO::FETCH_ASSOC);
 
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $message[] = '¡Confirme que la contraseña no coincide!';
       }else{
-         $insert_user = $conn->prepare("INSERT INTO `users`(id,name, email, password) VALUES(?,?,?,?)");
+         $insert_user = $conn->prepare("INSERT INTO `usuarios`(id,name, email, password) VALUES(?,?,?,?)");
          $insert_user->execute([$id,$name, $email, $cpass]);
          $message[] = 'Registrado correctamente, inicie sesión ahora por favor!';
       }
