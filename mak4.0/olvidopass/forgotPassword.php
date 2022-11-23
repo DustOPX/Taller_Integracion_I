@@ -15,7 +15,7 @@ if(!empty($sessData['status']['msg'])){
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" 	type="text/css" media="all">
 </head>
 <body>
-    <a href="index.php"><h1>Inicio sesion </h1></a>
+    <a href="../login.php"><h1>Inicio sesion </h1></a>
 	<div class="container">
 		<h2>Ingresa tu Dirección de Correo Electrónico para Resetear tu Contraseña</h2>
         <?php echo !empty($statusMsg)?'<p class="'.$statusMsgType.'">'.$statusMsg.'</p>':''; ?>
